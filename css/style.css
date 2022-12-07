@@ -13,6 +13,7 @@
 --item-set-gap:30px;
 --porfolio-button-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 --developers-cards-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+--background-clients:#F5f5f5;
 
 --main-font:  "Roboto", Sans-serif;
 }
@@ -170,9 +171,36 @@ align-items: center;
 margin-right: auto;
 }
 
-
+.header-list2  {
+    display: flex;
+}
 .header-list2 li:not(:last-child)  {
 margin-right: 50px;
+
+}
+
+.header-item::before {
+    content: '';
+    width: 16px;
+    height: 12px;
+    display: inline-block;
+    background-image:url(../images/envelope\ \(hover\).png);
+    background-size: contain;
+    margin-right: 10px;
+    background-position: center;
+}
+
+.envelope-icon::before {
+    width: 16px;
+    height: 12px;
+    background-image: url(../images/envelope-icon.png);
+  
+}
+
+.mobile-icon::before {
+    width: 10px;
+    height: 16px;
+    background-image: url(../images/mobile-icon.png)
 }
 
 
@@ -184,6 +212,7 @@ font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 padding: 32px 0;
+background-position:  center;
 }
 
 
@@ -241,10 +270,17 @@ color: var(--accent-color);
 
 
 .hero  {
-background-color: var(--footer-background);
 text-align: center;
 padding: 200px 0px 200px;
-}
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg) ;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-color: #C4C4C4;
+max-width: 1600px;
+margin-left: auto;
+margin-right: auto;
+}   
 
 .centre  {
 text-align: center;
@@ -377,6 +413,40 @@ height: auto;
 }
 
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.developers-soc-items {
+    width: 44px;
+    height: 44px;
+}
+
+.developers-soc-link:hover{
+    background-color: var(--accent-color);
+}
+
+.developers-soc-link:hover .dev-soc-icons{
+    fill: var(--background-color);
+}
+
+.developers-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.developers-soc-items:not(:last-child) {
+    margin-right: 10px;
+}
+
+
 .developers-item:not(:last-child) {
 margin-right: 30px;
 }
@@ -395,10 +465,61 @@ margin-bottom: 10px;
 font-size: 16px;
 line-height: 1.19;
 color: var(--main-text-color);
+margin-bottom: 16px;
 }
 
 
 
+/* ----------- CLIENTS ---------- */
+
+
+.clients  {
+
+padding: 94px 0;
+}
+
+
+.heading-clients  {
+    margin-bottom: 50px;
+}
+
+
+.clients-list {
+    display: flex;
+    align-items: center;
+}
+.clients-item  {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+
+.clients-item:hover  {
+    border-color: var(--accent-color);
+}
+
+.clients-link:hover {
+    color: var(--accent-color);
+}
+
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clients-item:not(:last-child)  {
+    margin-right: 30px;
+}
 /* ----------- PORTFOLIO PAGE ---------- */
 
 
@@ -565,4 +686,52 @@ text-decoration: none;
 .footer-link:hover,
 .footer-link:focus  {
 color: var(--accent-color);
+}
+
+.footer-socials  {
+    display: block;
+}
+
+
+.call-to-action {
+font-style: Bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 3%;
+margin-bottom: 10px;
+color: var(--primary-header-color);
+display: flex;
+text-align: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+.footer-soc-list  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-item  {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-soc-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-soc-link  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.footer-soc-icons  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
