@@ -14,6 +14,7 @@
 --porfolio-button-shadow:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 --developers-cards-shadow:0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 --background-clients:#F5f5f5;
+--icon-color:#AFB1B8;
 
 --main-font:  "Roboto", Sans-serif;
 }
@@ -179,29 +180,37 @@ margin-right: 50px;
 
 }
 
-.header-tel::before {
-    content: '';
-    width: 16px;
-    height: 12px;
-    display: inline-block;
-    background-image:url(../images/icons.svg#icon-mobile);
-    background-size: contain;
-    margin-right: 10px;
-    background-position: center;
+
+.header-email {
+    display: flex;
+    justify-content: center;
 }
 
+.header-tel {
+    display: flex;
+    justify-content: center;
+}
 .header-email::before {
     content: "";
     width: 16px;
     height: 12px;
     background-image: url(../images/icons.svg#icon-envelope);
-    display: inline-block;
     margin-right: 10px;
     background-position:center;
     background-size: contain;
+    fill: var(--icon-color);
 }
 
-
+.header-tel::before {
+    content: '';
+    width: 10px;
+    height: 16px;
+    background-image:url(../images/icons.svg#icon-mobile);
+    background-size: contain;
+    margin-right: 10px;
+    background-position: center;
+    fill: var(--icon-color);
+}
 
 .header-link {
 display: block;
@@ -336,6 +345,15 @@ margin-right: 30px;
 margin-right: auto;
 }
 
+.list-item::before {
+   content: "";
+   display: block;
+   height: 120px;
+   background-image: url(../images/icons.svg#icon-antenna);
+   background-size: contain;
+}
+
+
 .portfolio-pre-title {
 font-weight: 700;
 font-size: 14px;
@@ -424,6 +442,10 @@ height: auto;
     height: 44px;
 }
 
+
+.dev-soc-icons {
+    fill: var(--icon-color);
+}
 .developers-soc-link:hover{
     background-color: var(--accent-color);
 }
@@ -692,6 +714,9 @@ color: var(--accent-color);
 }
 
 
+.section-2  {
+    width: (1170 / 2 - 870px);
+}
 .call-to-action {
 font-style: Bold;
 font-size: 14px;
@@ -702,7 +727,9 @@ color: var(--primary-header-color);
 display: flex;
 text-align: center;
 justify-content: center;
-margin: 0 auto;
+margin-top: 0;
+margin-left:  auto;
+margin-bottom: 10px;
 }
 
 .footer-soc-list  {
