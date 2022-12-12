@@ -179,29 +179,28 @@ margin-right: 50px;
 
 }
 
-.header-item::before {
+.header-tel::before {
     content: '';
     width: 16px;
     height: 12px;
     display: inline-block;
-    background-image:url(../images/envelope\ \(hover\).png);
+    background-image:url(../images/icons.svg#icon-mobile);
     background-size: contain;
     margin-right: 10px;
     background-position: center;
 }
 
-.envelope-icon::before {
+.header-email::before {
+    content: "";
     width: 16px;
     height: 12px;
-    background-image: url(../images/envelope-icon.png);
-  
+    background-image: url(../images/icons.svg#icon-envelope);
+    display: inline-block;
+    margin-right: 10px;
+    background-position:center;
+    background-size: contain;
 }
 
-.mobile-icon::before {
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/mobile-icon.png)
-}
 
 
 .header-link {
