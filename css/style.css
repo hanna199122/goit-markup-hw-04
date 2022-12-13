@@ -66,6 +66,7 @@ body {
 
 .link {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -202,6 +203,17 @@ img {
 .head-icons {
     fill: var(--icon-color);
     margin-right: 10px;
+    color: var(--main-text-color);
+}
+
+.icon-email  {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-mobile  {
+    width: 10px;
+    height: 16px;
 }
 
 .head-icons-link:hover .head-icons {
@@ -209,14 +221,14 @@ img {
 }
 
 
-.header-link {
+.header-link  {
     display: block;
     color: var(--secondary-header-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    padding: 32px 0;
+    padding:32px 0;
     background-position:  center;
 }
 
@@ -246,7 +258,6 @@ img {
 
     display: flex;
 }
-
 
 .header-email {
     color: var(--main-text-color);
@@ -366,6 +377,7 @@ img {
     padding-left: 102px;
     padding-right: 102px;
     padding-bottom: 25px;
+    border-radius: 4px;
     }
 
 .portfolio-icons {
@@ -516,7 +528,7 @@ img {
     display: flex;
     align-items: center;
 }
-.clients-item  {
+.clients-link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -527,7 +539,7 @@ img {
 }
 
 
-.clients-item:hover  {
+.clients-link:hover {
     border-color: var(--accent-color);
 }
 
@@ -540,7 +552,8 @@ img {
    fill: var(--accent-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     color: var(--accent-color);
 }
 
@@ -593,13 +606,14 @@ padding: 94px 0px;
     box-shadow: var(--porfolio-button-shadow);
     }
 
-.card-hover:hover {
+.card-hover:hover,
+.card-hover:focus {
     box-shadow: var(--portfolio-cardshadow);
 }
+
 .portfolio-button-1  {
     padding: 6px 25px;
 }
-
 
 .buttons {
     display: flex;
@@ -736,7 +750,6 @@ color: var(--accent-color);
 
 .socials-wrap {
 margin-right: auto;
-justify-content: center;
 }
 
 .footer-socials  {
@@ -761,7 +774,7 @@ justify-content: center;
     display: flex;
 }
 
-.footer-soc-item  {
+.footer-soc-link  {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -788,6 +801,7 @@ justify-content: center;
 }
 
 
-.footer-soc-item:hover{
+.footer-soc-link:hover,
+.footer-soc-link:focus  {
     background-color: var(--accent-color);
 }
