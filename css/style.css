@@ -606,6 +606,10 @@ padding: 94px 0px;
     box-shadow: var(--porfolio-button-shadow);
     }
 
+.card-hover {
+    display: block;
+    }
+    
 .card-hover:hover,
 .card-hover:focus {
     box-shadow: var(--portfolio-cardshadow);
